@@ -1,0 +1,62 @@
+{
+  "name": "brand-template-5325",
+  "private": true,
+  "sideEffects": false,
+  "type": "module",
+  "scripts": {
+    "dev": "remix vite:dev",
+    "dev:wrangler": "wrangler pages dev",
+    "cf-typegen": "wrangler types",
+    "build": "remix vite:build",
+    "start": "wrangler pages dev ./build/client",
+    "preview": "npm run build && wrangler pages dev --local",
+    "deploy": "npm run build && wrangler pages deploy",
+    "lint": "biome lint",
+    "fmt": "biome format --write ./"
+  },
+  "dependencies": {
+    "@hono/zod-validator": "^0.4.3",
+    "@remix-run/cloudflare": "^2.14.0",
+    "@remix-run/cloudflare-pages": "^2.14.0",
+    "@remix-run/react": "^2.14.0",
+    "dotenv": "^16.4.5",
+    "framer-motion": "^12.4.10",
+    "hono-openapi": "^0.4.6",
+    "isbot": "^5.1.17",
+    "path": "^0.12.7",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-icons": "^5.5.0",
+    "react-photo-view": "^1.2.7",
+    "resend": "^4.1.2",
+    "zod": "^3.24.2",
+    "zod-openapi": "^4.2.3"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@cloudflare/workers-types": "^4.20241112.0",
+    "@remix-run/dev": "^2.14.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@typescript-eslint/eslint-plugin": "^8.15.0",
+    "@typescript-eslint/parser": "^8.15.0",
+    "autoprefixer": "^10.4.20",
+    "drizzle-kit": "^0.28.1",
+    "eslint": "^9.15.0",
+    "eslint-import-resolver-typescript": "^3.6.3",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11",
+    "vite-tsconfig-paths": "^5.1.2",
+    "wrangler": "3.87.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
