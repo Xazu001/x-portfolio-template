@@ -23,14 +23,16 @@ A ready-to-use template that you can easily clone, customize, and deploy on Clou
 2. Customize the template:
 
 - Replace instances of "Temp" with your desired project name.
-- Modify tailwind.config.ts and other configuration files as needed to match your requirements.
+- Modify tailwind.config.ts.
+- Modify app/lib/content/Projects.tsx.
+- Modify images in public folder and other configuration files as needed to match your requirements.
 
 ## Installation
 
 1. **Clone the repository**:
 
    ```sh
-   git clone https://github.com/Xazu001/brand-template-5325.git
+   git clone https://github.com/Xazu001/x-portfolio-template.git
    ```
 
 2. **Install dependencies**:
